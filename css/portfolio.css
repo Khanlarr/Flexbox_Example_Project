@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.navbar{
+    width: 100%;
+    background-color: bisque;
+    position: sticky;
+    top: 0;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem; 
+    height: 4rem;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+nav ul a{
+    color: gray;
+    font-size: 18px;
+}
+nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24, 146, 136);
+    color: white;
+    height: 100%;
+    width: 10rem;
+}
+.portfolio{
+    display: flex;
+    padding: 3rem 2rem;
+    height: 85vh;
+    justify-content: space-between;
+    background: rgb(161, 149, 149);
+}
+.portfolio .left{
+    background: white;
+    width: 60%;
+    min-height: 100%;
+    overflow: hidden;
+    padding: 2rem;
+}
+.portfolio .left .card{
+    border-top: 2px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 0;
+  
+}
+.portfolio .left .card div{
+      position: relative;
+}
+.portfolio .left .card .h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2rem;
+position: absolute;
+bottom: 7%;
+left: 0;
+background: rgb(24, 146, 136);
+}
+.portfolio h2{
+    color: rgb(24, 146, 136);
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+}
+.portfolio .right{
+    background: white;
+    width: 25%;
+    height: 55%;
+    padding: 2rem;
+}
+.portfolio .right .about_img{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    border-top: 2px solid gray;
+}
+.portfolio .right .about_img img{ 
+    width: 50px;
+    height: 50px;
+    margin: 1rem;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(27, 26, 26);
+    color: white;
+    height: 5rem;
+}
