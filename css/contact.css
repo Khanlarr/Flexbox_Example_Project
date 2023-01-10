@@ -48,12 +48,14 @@ nav .logo{
     display: flex;
     padding: 3rem 2rem;
     justify-content: space-between;
+    align-items: flex-start;
     background: rgb(161, 149, 149);
+    min-height: 100vh;
 }
 .contact .left{
     background: white;
     width: 60%;
-    height: 110%;
+    min-height:auto;
     padding: 2rem;
 }
 .contact h2{
@@ -84,8 +86,7 @@ nav .logo{
 }
 .contact .right{
     background: white;
-    width: 25%;
-    height: 55%;
+    width: 30%;
     padding: 2rem;
 }
 .right .about_img{
@@ -107,3 +108,34 @@ footer{
     color: white;
     height: 5rem;
 }
+@media  (max-width:479px){
+    nav{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: baseline;
+        gap: 1.5rem;
+        height: 8rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+       }
+    .contact .right .about_img img{ 
+        width: 35px;
+        height: 35px;
+    } 
+    .contact h2{
+        font-size: 1.3rem;
+    }
+}
+@media  (max-width:991px){
+    .contact{
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+    .contact .left{
+        width: 100%;
+    }
+    .contact .right{
+        width: 100%;
+    }
+    }

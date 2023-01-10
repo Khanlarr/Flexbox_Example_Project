@@ -14,7 +14,7 @@ ul{
     background-color: bisque;
     position: sticky;
     top: 0;
-
+    z-index: 1000;
 }
 nav{
     display: flex;
@@ -44,7 +44,7 @@ nav .logo{
 .portfolio{
     display: flex;
     padding: 3rem 2rem;
-    height: 85vh;
+    min-height: 100vh;
     justify-content: space-between;
     background: rgb(161, 149, 149);
 }
@@ -52,7 +52,6 @@ nav .logo{
     background: white;
     width: 60%;
     min-height: 100%;
-    overflow: hidden;
     padding: 2rem;
 }
 .portfolio .left .card{
@@ -84,7 +83,7 @@ background: rgb(24, 146, 136);
 }
 .portfolio .right{
     background: white;
-    width: 25%;
+    width: 30%;
     height: 55%;
     padding: 2rem;
 }
@@ -106,4 +105,43 @@ footer{
     background-color: rgb(27, 26, 26);
     color: white;
     height: 5rem;
+}
+@media  (max-width:479px){
+    nav{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: baseline;
+        gap: 1.5rem;
+        height: 8rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+       }
+    .portfolio .right .about_img img{ 
+        width: 35px;
+        height: 35px;
+    } 
+    .portfolio h2{
+        font-size: 1.3rem;
+    }
+}
+@media  (max-width:527px){
+    .portfolio .left .card div img{
+        width: 100%;
+    }
+    .portfolio .left .card div{
+        width: 100%;
+    }
+}
+@media  (max-width:991px){
+.portfolio{
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.portfolio .left{
+    width: 100%;
+}
+.portfolio .right{
+    width: 100%;
+}
 }
